@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartmanagement.OrderList_fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/FoodImagesRv"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="400dp" />
+
+        <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FoodImagesRv"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/amarante"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#A51345"
+            android:shadowRadius="@integer/material_motion_duration_medium_1"
+            android:text="Proceed" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="235dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/yatra_one"
+            android:layout_below="@id/FoodImagesRv"
+            android:layout_alignEnd="@id/proceedButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="171dp"
+            android:text="Total amount"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#095877"
+    tools:context=".databasemanagement.PaymentActivity">
+
+    <TextView
+        android:id="@+id/toolbarTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#47D1E3"
+        android:fontFamily="@font/yatra_one"
+        android:paddingTop="10dp"
+        android:text="Payment"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/baseline_currency_rupee_24" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hotel"
+        android:layout_marginTop="20dp"
+        android:layout_height="250dp"
+        android:contentDescription="ustaadhotel" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:fontFamily="@font/yatra_one"
+        android:layout_width="241dp"
+        android:paddingTop="8dp"
+        android:layout_height="40dp"
+        android:background="#19639E"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:textSize="20sp"
+        android:paddingStart="5dp"
+        android:text="Your total amount"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/payUsing"
+        android:layout_width="241dp"
+        android:paddingTop="5dp"
+        android:layout_height="40dp"
+        android:background="#19639E"
+        android:fontFamily="@font/yatra_one"
+        android:paddingStart="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:textSize="20sp"
+        android:text="pay using any upi app"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/backToCart"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="460dp"
+        android:background="#1A7295"
+        android:clickable="true"
+        android:fontFamily="@font/yatra_one"
+        android:paddingTop="10dp"
+        android:text="Cart"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/ProfilePage"
+        android:layout_width="205dp"
+        android:paddingTop="10dp"
+        android:layout_height="40dp"
+        android:background="#1A7295"
+        android:textAlignment="center"
+        android:fontFamily="@font/yatra_one"
+        android:layout_toRightOf="@id/backToCart"
+        android:layout_marginTop="460dp"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:clickable="true"
+        android:text="Profile"
+        android:textColor="#fff" />
+
+</RelativeLayout>

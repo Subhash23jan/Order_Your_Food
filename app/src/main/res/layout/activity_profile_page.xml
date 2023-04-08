@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0E8CEF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilemanagement.ProfilePageActivity">
+  <TextView
+      android:id="@+id/toolbarTextView"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:background="#47D1E3"
+      android:fontFamily="@font/courgette"
+      android:paddingTop="10dp"
+      android:text=" Profile"
+      android:textSize="22sp"
+      android:textStyle="bold"
+      app:drawableStartCompat="@drawable/profile_page_icon" />
+
+  <TextView
+      android:id="@+id/TextViewLogout"
+      android:layout_width="wrap_content"
+      android:layout_height="35dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="20dp"
+      android:fontFamily="@font/courgette"
+      android:backgroundTint="#fff"
+      android:clickable="true"
+      android:text="Log out "
+      android:textAllCaps="false"
+      android:textColor="#fff"
+      android:textSize="24sp"
+      app:drawableEndCompat="@drawable/baseline_power_settings_new_24" />
+
+  <ImageView
+      android:id="@+id/profilePic"
+      android:layout_width="171dp"
+      android:layout_height="140dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="70dp"
+      android:layout_marginEnd="10dp"
+      android:layout_marginBottom="10dp"
+      android:contentDescription="image"
+      android:src="@drawable/baseline_image_search_24" />
+
+  <TextView
+      android:id="@+id/UserName"
+      android:layout_width="wrap_content"
+      android:layout_height="25dp"
+      android:layout_marginStart="200dp"
+      android:fontFamily="@font/courgette"
+      android:layout_marginTop="100dp"
+      android:text="User Name"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:textSize="19sp" />
+  <TextView
+      android:id="@+id/UserPhone"
+      android:layout_width="wrap_content"
+      android:layout_marginTop="145dp"
+      android:text="User phone"
+      android:textAllCaps="true"
+      android:textColor="@color/white"
+      android:fontFamily="@font/courgette"
+      android:textSize="19sp"
+      android:layout_marginStart="200dp"
+      android:layout_height="25dp"/>
+
+  <TextView
+      android:id="@+id/addressTextview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="233dp"
+      android:clickable="true"
+      android:minHeight="48dp"
+      android:fontFamily="@font/courgette"
+      android:paddingTop="7dp"
+      android:paddingStart="10dp"
+      android:text="Saved Address"
+      android:textColor="#000"
+      android:textSize="19sp"
+      app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+  <TextView
+      android:id="@+id/previousOrder"
+      android:fontFamily="@font/courgette"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="285dp"
+      android:clickable="true"
+      android:minHeight="48dp"
+      android:paddingStart="10dp"
+      android:paddingTop="7dp"
+      android:text="Your Orders"
+      android:textColor="#000"
+      android:textSize="19sp"
+      app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+  <TextView
+      android:id="@+id/cartPage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:fontFamily="@font/courgette"
+      android:layout_marginTop="337dp"
+      android:clickable="true"
+      android:minHeight="48dp"
+      android:paddingStart="10dp"
+      android:text="Show Cart"
+      android:textColor="#000"
+      android:paddingTop="7dp"
+      android:textSize="19sp"
+      app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24" />
+
+  <TextView
+      android:id="@+id/editProfile"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="385dp"
+      android:clickable="true"
+      android:minHeight="48dp"
+      android:fontFamily="@font/courgette"
+      android:paddingStart="10dp"
+      android:paddingTop="7dp"
+      android:text="Edit Profile"
+      android:textColor="#000"
+      android:textSize="19sp"
+      app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24" />
+  <TextView
+      android:layout_alignParentBottom="true"
+      android:text="Our team working on this part and it Available Soon..."
+      android:textAlignment="center"
+      android:paddingTop="130dp"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"/>
+
+</RelativeLayout>

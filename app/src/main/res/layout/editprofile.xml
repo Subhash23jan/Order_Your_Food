@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editprofilelyt"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/EditName"
+        android:layout_width="250dp"
+        android:hint="Enter your name"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:layout_height="48dp"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/EditPhone"
+        android:layout_width="250dp"
+        android:hint="Enter your number"
+        android:layout_margin="20dp"
+        android:inputType="phone"
+        android:layout_height="48dp"/>
+    <EditText
+        android:id="@+id/EditextAddress"
+        android:layout_width="300dp"
+        android:hint="Enter your address"
+        android:layout_margin="20dp"
+        android:paddingStart="28dp"
+        android:inputType="text"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

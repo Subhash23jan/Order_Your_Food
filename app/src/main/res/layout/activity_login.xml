@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0FA2B5"
+    tools:context=".profilemanagement.LoginActivity">
+    <TextView
+        android:id="@+id/toolbartextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#47D1E3"
+        android:fontFamily="@font/langar"
+        android:textColor="#000"
+        android:paddingTop="10dp"
+        android:text=" Login Page"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/baseline_login_24" />
+    <FrameLayout
+        android:id="@+id/signUpFrame"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/rltvlyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/EditextEmail"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="250dp"
+            android:fontFamily="@font/langar"
+            android:hint="@string/enter_your_email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/Editextpassword"
+            android:hint="@string/enter_your_password"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/langar"
+            android:inputType="numberPassword"
+            android:layout_width="250dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/loginBtn"
+            android:textAllCaps="false"
+            android:text="@string/login"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="360dp"
+            android:backgroundTint="#D81818"
+            android:fontFamily="@font/langar"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/loginWithGoogleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="464dp"
+            android:backgroundTint="#2E98EC"
+            android:drawableEnd="@drawable/googleimage"
+            android:fontFamily="@font/langar"
+            android:text="Login with google "
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="361dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/courgette"
+            android:text="Forgot password"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/NewUser"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="359dp"
+            android:fontFamily="@font/courgette"
+            android:text="New user"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

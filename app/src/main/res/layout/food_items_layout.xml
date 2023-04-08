@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:backgroundTint="#226FAC"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageViewFoodItems"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_height="150dp"
+            android:contentDescription="food image" />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="208dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/amarante"
+            android:text="food name"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="208dp"
+            android:textSize="20sp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="100dp"
+            android:fontFamily="@font/amarante"
+            android:layout_marginTop="60dp"
+            android:textColor="#fff"
+            android:text="food price"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btncart"
+            android:text="add to cart"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#DC4B4B"
+            android:fontFamily="@font/amarante"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="190dp"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

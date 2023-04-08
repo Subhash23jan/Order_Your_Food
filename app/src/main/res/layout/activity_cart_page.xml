@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cartmanagement.CartPageActivity">
+    <TextView
+        android:id="@+id/toolbarTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#47D1E3"
+        android:fontFamily="@font/langar"
+        android:paddingTop="15dp"
+        android:text=" Your Cart"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/baseline_shopping_cart_24" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/toolbarTextView"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_below="@id/recyclerView"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#0F7DD5"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/HomeTextView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="#0A97D6"
+            android:clickable="true"
+            android:text="Home"
+            android:fontFamily="@font/langar"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#DFC909"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/continueTextView"
+            android:layout_width="145dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="115dp"
+            android:background="#E91E63"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:text="Place order"
+            android:fontFamily="@font/langar"
+            android:textAlignment="center"
+            android:textColor="#093EDF"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</RelativeLayout>
